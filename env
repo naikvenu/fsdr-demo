@@ -1,0 +1,12 @@
+export COMPARTMENT_ID=ocid1.compartment.oc1..aaaaaaaa
+export DB_NAME=fsdrdemoadb
+export DB_DISPLAY_NAME=fsdrdemoadb
+export DB_PASSWORD=ApacCeCoe#1234
+export WALLET_PW=ApacCeCoe#1234
+export DB_SERVICE_NAME=${DB_NAME}_tp
+export WALLET_ZIP=/tmp/Wallet_${DB_NAME}.zip
+export STANDBY_WALLET_ZIP=/tmp/Wallet_${DB_NAME}_Standby.zip
+export PRIMARY_REGION=ap-sydney-1
+export STANDBY_REGION=ap-melbourne-1
+export STANDBY_DB_NAME=${DB_NAME}_remote
+

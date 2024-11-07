@@ -1,0 +1,21 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: oracle-sql-pod
+  namespace: mushop
+spec:
+  containers:
+    - name: oracle-client
+      image: oraclelinux:8
+      command: ["/bin/bash", "-c", "sleep infinity"]
+      volumeMounts:
+        - name: oracle-wallet
+          mountPath: /usr/lib/oracle/19.3/client64/lib/network/admin/standby
+      env:
+        - name: TNS_ADMIN
+          value: /usr/lib/oracle/19.3/client64/lib/network/admin/standby
+  volumes:
+    - name: oracle-wallet
+      secret:
+        secretName: catalogue-standby-oadb-wallet
+
