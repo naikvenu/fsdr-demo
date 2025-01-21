@@ -1,8 +1,8 @@
 export COMPARTMENT_ID=ocid1.compartment.oc1..aaaaaaaa
 export DB_NAME=fsdrdemoadb
 export DB_DISPLAY_NAME=fsdrdemoadb
-export DB_PASSWORD=ApacCeCoe#1234
-export WALLET_PW=ApacCeCoe#1234
+export DB_PASSWORD=<Your Password>
+export WALLET_PW=<Your Password, Follow standards>
 export DB_SERVICE_NAME=${DB_NAME}_tp
 export WALLET_ZIP=/tmp/Wallet_${DB_NAME}.zip
 export STANDBY_WALLET_ZIP=/tmp/Wallet_${DB_NAME}_Standby.zip
